@@ -3,3 +3,10 @@ composer.phar
 composer.lock
 .DS_Store
 .idea
+.vagrant
+/files
+/manifests
+/modules
+Vagrantfile
+puphpet.json
+/xhprof
