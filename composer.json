@@ -23,7 +23,8 @@
         "carbontwelve/widgets": "@dev",
         "carbontwelve/tools": "@dev",
         "carbontwelve/admin": "@dev",
-        "carbontwelve/bloggy-kernel": "@dev"
+        "carbontwelve/bloggy-kernel": "@dev",
+        "juy/profiler" : "dev-master"
     },
     "autoload": {
         "classmap": [
