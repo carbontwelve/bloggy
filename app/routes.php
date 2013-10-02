@@ -11,7 +11,19 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', array('as' => 'home', 'uses' => 'App\Controllers\Frontend\PageController@home') );
+
+Route::group(
+    array('prefix' => 'administration'),
+    function () {
+
+        Route::get(
+            '/dashboard',
+            array
+            (
+                'as' => 'administration.dashboard',
+                'uses' => 'App\Controllers\Backend\DashboardController@index'
+            )
+        );
+    }
+);

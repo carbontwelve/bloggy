@@ -5,4 +5,4 @@ bloggy
 [![Build Status](https://travis-ci.org/carbontwelve/bloggy-kernel.png?branch=master)](https://travis-ci.org/carbontwelve/bloggy-kernel)
 [![Code Coverage](https://scrutinizer-ci.com/g/carbontwelve/bloggy/badges/coverage.png?s=379d39cc71987562c0a95e8cc4c87a8679699e1b)](https://scrutinizer-ci.com/g/carbontwelve/bloggy/)
 
-My Blogging application
+A work in progress
