@@ -24,7 +24,7 @@
         "carbontwelve/tools": "@dev",
         "carbontwelve/admin": "@dev",
         "carbontwelve/bloggy-kernel": "@dev",
-        "juy/profiler" : "dev-master"
+        "sebklaus/profiler" : "dev-master"
     },
     "autoload": {
         "classmap": [
@@ -51,7 +51,6 @@
         ]
     },
     "config": {
-        "preferred-install": "source",
         "process-timeout": 5000
     },
     "minimum-stability": "dev"

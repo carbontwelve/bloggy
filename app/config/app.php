@@ -115,7 +115,9 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
-        'Cartalyst\Sentry\SentryServiceProvider'
+        'Cartalyst\Sentry\SentryServiceProvider',
+        'Sebklaus\Profiler\Providers\ProfilerServiceProvider',
+        'Carbontwelve\Admin\AdminServiceProvider'
 
 	),
 
