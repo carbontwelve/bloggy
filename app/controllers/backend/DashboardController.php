@@ -10,7 +10,6 @@ class DashboardController extends AdminBaseController {
 
     public function index()
     {
-
         $numberOfCategories = 0;
         $numberOfTags = 0;
 
@@ -18,6 +17,5 @@ class DashboardController extends AdminBaseController {
             'numberOfCategories' => $numberOfCategories,
             'numberOfTags'       => $numberOfTags
         ) );
-
     }
 }

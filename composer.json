@@ -22,7 +22,8 @@
         "barryvdh/laravel-ide-helper": "1.*",
         "carbontwelve/widgets": "@dev",
         "carbontwelve/tools": "@dev",
-        "carbontwelve/admin": "@dev"
+        "carbontwelve/admin": "@dev",
+        "carbontwelve/bloggy-kernel": "@dev"
     },
     "autoload": {
         "classmap": [
