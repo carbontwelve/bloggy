@@ -65,7 +65,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => 'SQdSGZLCtbVtGzSrECAxFj2cYI68dCpG',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -115,8 +115,9 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+        'Barryvdh\VendorCleanup\VendorCleanupServiceProvider',
+        'Barryvdh\Debugbar\ServiceProvider',
         'Cartalyst\Sentry\SentryServiceProvider',
-        'Sebklaus\Profiler\Providers\ProfilerServiceProvider',
         'Carbontwelve\Admin\AdminServiceProvider'
 
 	),
@@ -183,7 +184,8 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-        'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry'
+        'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
+        'Debugbar'        => 'Barryvdh\Debugbar\Facade',
 
 	),
 

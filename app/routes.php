@@ -27,3 +27,5 @@ Route::group(
         );
     }
 );
+
+App::bind('Bloggy\Repositories\PageRepositoryInterface', 'Bloggy\Repositories\DbPageRepository');
