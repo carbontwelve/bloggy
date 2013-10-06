@@ -4,11 +4,11 @@ use Illuminate\Support\ServiceProvider;
 
 /**
  * --------------------------------------------------------------------------
- * PageServiceProvider
+ * WidgetServiceProvider
  * --------------------------------------------------------------------------
  *
  */
-class PageServiceProvider extends ServiceProvider{
+class WidgetServiceProvider extends ServiceProvider{
 
     public function register()
     {

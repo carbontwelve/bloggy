@@ -8,6 +8,13 @@ use Carbontwelve\Admin\Controllers\Backend\AdminBaseController;
  */
 class DashboardController extends AdminBaseController {
 
+    private $widgets;
+
+    public function __construct()
+    {
+
+    }
+
     public function index()
     {
         $numberOfCategories = 0;

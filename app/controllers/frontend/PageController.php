@@ -23,4 +23,5 @@ class PageController extends BaseController {
     {
         return $this->page->find(1);
     }
+
 }
