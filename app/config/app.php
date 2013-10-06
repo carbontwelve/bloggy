@@ -117,6 +117,7 @@ return array(
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
         'Barryvdh\VendorCleanup\VendorCleanupServiceProvider',
         'Barryvdh\Debugbar\ServiceProvider',
+        'Way\Generators\GeneratorsServiceProvider',
         'Cartalyst\Sentry\SentryServiceProvider',
         'Carbontwelve\Admin\AdminServiceProvider'
 

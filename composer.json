@@ -27,7 +27,10 @@
     "require-dev": {
         "barryvdh/laravel-ide-helper": "1.*",
         "barryvdh/laravel-debugbar": "dev-master",
-        "barryvdh/laravel-vendor-cleanup": "1.*"
+        "barryvdh/laravel-vendor-cleanup": "1.*",
+        "way/generators": "dev-master",
+        "phpmd/phpmd" : "1.4.*"
+
     },
     "autoload": {
         "classmap": [
@@ -50,6 +53,7 @@
             "php artisan clear-compiled"
         ],
         "post-update-cmd": [
+            "php artisan ide-helper:generate",
             "php artisan optimize"
         ],
         "post-create-project-cmd": [
