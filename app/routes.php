@@ -13,6 +13,8 @@
 
 Route::get('/', array('as' => 'home', 'uses' => 'App\Controllers\Frontend\PageController@home') );
 
+Route::post('/search', array('as' => 'search', 'uses' => 'App\Controllers\Frontend\SearchController@find') );
+
 Route::group(
     array('prefix' => 'administration'),
     function () {
