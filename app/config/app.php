@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost',
+	'url' => 'http://localhost:8080',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -185,8 +185,10 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
+
         'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
         'Debugbar'        => 'Barryvdh\Debugbar\Facade',
+        //'Theme'           => 'Teepluss\Theme\Facades\Theme'
 
 	),
 

@@ -15,19 +15,4 @@ Route::get('/', array('as' => 'home', 'uses' => 'App\Controllers\Frontend\PageCo
 
 Route::post('/search', array('as' => 'search', 'uses' => 'App\Controllers\Frontend\SearchController@find') );
 
-Route::group(
-    array('prefix' => 'administration'),
-    function () {
-
-        Route::get(
-            '/dashboard',
-            array
-            (
-                'as' => 'administration.dashboard',
-                'uses' => 'App\Controllers\Backend\DashboardController@index'
-            )
-        );
-    }
-);
-
 App::bind('Bloggy\Repositories\PageRepositoryInterface', 'Bloggy\Repositories\DbPageRepository');
