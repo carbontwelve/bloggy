@@ -1,0 +1,3 @@
+[submodule "public/assets/less/vendor/elements"]
+	path = public/assets/less/vendor/elements
+	url = https://github.com/dmitryf/elements
