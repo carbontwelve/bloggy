@@ -28,7 +28,7 @@ $app->redirectIfTrailingSlash();
 
 $env = $app->detectEnvironment(array(
 
-	'development' => array('localhost'),
+	'development' => array('http://localhost:8080'),
 
 ));
 

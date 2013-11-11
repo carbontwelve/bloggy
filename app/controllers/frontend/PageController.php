@@ -2,6 +2,7 @@
 
 use App\Controllers\BaseController;
 use \Bloggy\Repositories\PageRepositoryInterface;
+use View;
 
 /**
  * Class DashboardController
@@ -21,7 +22,7 @@ class PageController extends BaseController {
 
     public function home()
     {
-        return $this->page->find(1);
+        return View::make('frontend.index');
     }
 
 }
