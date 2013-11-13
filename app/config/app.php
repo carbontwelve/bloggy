@@ -119,7 +119,8 @@ return array(
         'Barryvdh\Debugbar\ServiceProvider',
         'Way\Generators\GeneratorsServiceProvider',
         'Cartalyst\Sentry\SentryServiceProvider',
-        'Carbontwelve\Admin\AdminServiceProvider'
+        'Carbontwelve\Admin\AdminServiceProvider',
+        'Carbontwelve\BloggyKernel\BloggyKernelServiceProvider'
 
 	),
 
