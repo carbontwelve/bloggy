@@ -25,10 +25,12 @@ class TaxonomyTableSeeder extends Seeder {
         /** @var Bloggy\Repositories\Classification\TaxonomicUnits\Eloquent\TaxonomicUnitProvider $provider */
         $provider = Classification::getTaxonomicUnitsProvider();
 
-
         foreach ($data as $item)
         {
             $provider->create( $item );
+            $progress->advance();
         }
+
+        $progress->finish();
 	}
 }

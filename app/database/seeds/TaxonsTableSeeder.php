@@ -96,11 +96,13 @@ class TaxonsTableSeeder extends Seeder {
         /** @var Bloggy\Repositories\Classification\Taxons\Eloquent\TaxonsProvider $provider */
         $provider = Classification::getTaxonProvider();
 
-
         foreach ($data as $item)
         {
             $provider->create( $item );
+            $progress->advance();
         }
+
+        $progress->finish();
 	}
 
 }
