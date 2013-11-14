@@ -62,6 +62,21 @@ require $framework.'/Illuminate/Foundation/start.php';
 
 /*
 |--------------------------------------------------------------------------
+| Load The Application Events
+|--------------------------------------------------------------------------
+|
+| The events are kept in a separate file to ensure that they are easily
+| identified and I didn't want them cluttering up or filter.php routes.php
+|
+*/
+
+if (file_exists($path = $app['path'].'/events.php'))
+{
+    require $path;
+}
+
+/*
+|--------------------------------------------------------------------------
 | Return The Application
 |--------------------------------------------------------------------------
 |

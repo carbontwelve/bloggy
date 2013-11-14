@@ -1,7 +1,7 @@
 <?php namespace App\Controllers\Frontend;
 
 use App\Controllers\BaseController;
-use \Bloggy\Repositories\PageRepositoryInterface;
+use \Bloggy\Repositories\Page\PageRepositoryInterface;
 use View;
 
 /**
@@ -15,10 +15,10 @@ class PageController extends BaseController {
      */
     protected $page;
 
-    public function __construct( PageRepositoryInterface $pageServiceProvider )
-    {
-        $this->page = $pageServiceProvider;
-    }
+    //public function __construct( PageRepositoryInterface $pageServiceProvider )
+    //{
+    //    $this->page = $pageServiceProvider;
+   // }
 
     public function home()
     {

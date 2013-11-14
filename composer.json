@@ -21,8 +21,7 @@
         "laravel/framework": "4.0.*",
         "carbontwelve/widgets": "@dev",
         "carbontwelve/tools": "@dev",
-        "carbontwelve/admin": "@dev",
-        "carbontwelve/bloggy-kernel": "@dev"
+        "carbontwelve/admin": "@dev"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "1.*",
@@ -30,7 +29,6 @@
         "barryvdh/laravel-vendor-cleanup": "1.*",
         "way/generators": "dev-master",
         "phpmd/phpmd" : "1.4.*"
-
     },
     "autoload": {
         "classmap": [
@@ -39,7 +37,10 @@
             "app/models",
             "app/database/migrations",
             "app/database/seeds",
-            "app/tests/TestCase.php"
+            "app/tests/TestCase.php",
+            "app/Bloggy/Repositories/Classification/TaxonomicUnits/Eloquent/Exceptions.php",
+            "app/Bloggy/Repositories/Classification/TaxonomicUnits/Eloquent/Exceptions.php",
+            "app/Bloggy/Repositories/Classification/TaxonomicUnits/Eloquent/Exceptions.php"
         ],
         "psr-0": {
             "Bloggy" : "app"

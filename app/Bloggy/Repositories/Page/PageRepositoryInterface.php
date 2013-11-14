@@ -1,4 +1,4 @@
-<?php namespace Bloggy\Repositories;
+<?php namespace Bloggy\Repositories\Page;
 
 interface PageRepositoryInterface {
 

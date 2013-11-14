@@ -120,7 +120,8 @@ return array(
         'Way\Generators\GeneratorsServiceProvider',
         'Cartalyst\Sentry\SentryServiceProvider',
         'Carbontwelve\Admin\AdminServiceProvider',
-        'Carbontwelve\BloggyKernel\BloggyKernelServiceProvider'
+
+        'Bloggy\Services\TaxonomyServiceProvider'
 
 	),
 
@@ -190,6 +191,8 @@ return array(
         'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
         'Debugbar'        => 'Barryvdh\Debugbar\Facade',
         //'Theme'           => 'Teepluss\Theme\Facades\Theme'
+
+        'Classification'  => 'Bloggy\Facades\Classification'
 
 	),
 
