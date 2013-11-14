@@ -34,13 +34,14 @@ Network
             <th style="width:30px;">#</th>
             <th style="width:130px;">Domain</th>
             <th>Name</th>
+            <th style="width:30px;">Active</th>
             <th style="width: 100px;">Actions</th>
         </tr>
         </thead>
         <tbody class="table-hover">
         @if ( count( $networks ) == 0 )
         <tr>
-            <td colspan="4">Sorry, there are no records available.</td>
+            <td colspan="5">Sorry, there are no records available.</td>
         </tr>
         @else
             @foreach($networks as $network)
