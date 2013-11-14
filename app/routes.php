@@ -40,6 +40,14 @@ Route::group(
             }
         );
 
+        Route::group(
+            array('prefix' => 'articles'),
+            function () {
+                Route::get('/', array('as' => 'administration.article.index', 'uses' => 'App\Controllers\Backend\ArticleAdminController@index'));
+                Route::get('/', array('as' => 'administration.article.add', 'uses' => 'App\Controllers\Backend\ArticleAdminController@add'));
+            }
+        );
+
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //  _____
         // |_   _|_ ___  _____  _ __   ___  _ __ ___  _   _

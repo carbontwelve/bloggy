@@ -43,12 +43,12 @@ Event::listen('menu.register', function($menuProvider)
 
     $dashboardChildItem         = new \Carbontwelve\Admin\Libraries\Menu\MenuItem();
     $dashboardChildItem->text   = 'Author new article';
-    $dashboardChildItem->href   = '#';
+    $dashboardChildItem->href   = route('administration.article.add');
     $dashboardMenuItem->addChild($dashboardChildItem);
 
     $dashboardChildItem         = new \Carbontwelve\Admin\Libraries\Menu\MenuItem();
     $dashboardChildItem->text   = 'List articles';
-    $dashboardChildItem->href   = '#';
+    $dashboardChildItem->href   = route('administration.article.index');
     $dashboardMenuItem->addChild($dashboardChildItem);
 
     $dashboardChildItem         = new \Carbontwelve\Admin\Libraries\Menu\MenuItem();
@@ -137,5 +137,23 @@ Event::listen('menu.register', function($menuProvider)
     $dashboardMenuItem->addChild($dashboardChildItem);
 
     $menuProvider->register($dashboardMenuItem, 'appearance');
+
+});
+
+/** @var \Carbontwelve\Widgets\Drivers\Pane $dashboardWidget */
+Event::listen('dashboard.register', function( $dashboardWidget )
+{
+
+    $dashboardWidget->add('right-now', 1, function(){
+        return View::make('backend.widgets.dashboard.right-now')
+            ->with('numberOfCategories', 0)
+            ->with('numberOfTags', 0)
+            ->render();
+    });
+
+    $dashboardWidget->add('quick-post',2, function(){
+        return View::make('backend.widgets.dashboard.quick-post')
+            ->render();
+    });
 
 });

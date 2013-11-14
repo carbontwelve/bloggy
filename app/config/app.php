@@ -121,7 +121,8 @@ return array(
         'Cartalyst\Sentry\SentryServiceProvider',
         'Carbontwelve\Admin\AdminServiceProvider',
 
-        'Bloggy\Services\TaxonomyServiceProvider'
+        'Bloggy\Services\TaxonomyServiceProvider',
+        'Carbontwelve\Widgets\WidgetsServiceProvider'
 
 	),
 
@@ -192,7 +193,8 @@ return array(
         'Debugbar'        => 'Barryvdh\Debugbar\Facade',
         //'Theme'           => 'Teepluss\Theme\Facades\Theme'
 
-        'Classification'  => 'Bloggy\Facades\Classification'
+        'Classification'  => 'Bloggy\Facades\Classification',
+        'WidgetManager'   => 'Carbontwelve\Widgets\Facades\WidgetManager'
 
 	),
 
